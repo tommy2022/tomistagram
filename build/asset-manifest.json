@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/tomistagram/static/js/main.d255bd51.chunk.js",
-    "main.js.map": "/tomistagram/static/js/main.d255bd51.chunk.js.map",
+    "main.js": "/tomistagram/static/js/main.747e29fb.chunk.js",
+    "main.js.map": "/tomistagram/static/js/main.747e29fb.chunk.js.map",
     "runtime-main.js": "/tomistagram/static/js/runtime-main.0593534e.js",
     "runtime-main.js.map": "/tomistagram/static/js/runtime-main.0593534e.js.map",
     "static/js/2.6002efd9.chunk.js": "/tomistagram/static/js/2.6002efd9.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.0593534e.js",
     "static/js/2.6002efd9.chunk.js",
-    "static/js/main.d255bd51.chunk.js"
+    "static/js/main.747e29fb.chunk.js"
   ]
 }
