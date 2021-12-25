@@ -33,6 +33,8 @@ export default function Header() {
 
   const maincolor = useColorModeValue("white", "blue.800");
 
+  const root = process.env.PUBLIC_URL;
+
   return (
     <Container bg={maincolor} maxW="62em" mx="auto" p={1}>
       <Flex>
@@ -40,12 +42,12 @@ export default function Header() {
           <HStack>
             <Link to="/">
               <Image
-                src={process.env.PUBLIC_URL + "/instagram.jpg"}
+                src={root + "/instagram.jpg"}
                 alt="insta logo"
                 style={logo_style}
               />
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to={root + "/"} style={{ textDecoration: "none" }}>
               <Heading size="md" style={title}>
                 Tomistagram
               </Heading>
@@ -65,7 +67,7 @@ export default function Header() {
           <Center>
             <Link to="/">
               <img
-                src={process.env.PUBLIC_URL + "/email.png"}
+                src={root + "/email.png"}
                 alt="email logo"
                 style={mail_style}
               />
