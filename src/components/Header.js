@@ -39,7 +39,11 @@ export default function Header() {
         <Box p="2" w="100%">
           <HStack>
             <Link to="/">
-              <Image src="instagram.jpg" alt="insta logo" style={logo_style} />
+              <Image
+                src={process.env.PUBLIC_URL + "/instagram.jpg"}
+                alt="insta logo"
+                style={logo_style}
+              />
             </Link>
             <Link to="/" style={{ textDecoration: "none" }}>
               <Heading size="md" style={title}>
@@ -60,7 +64,11 @@ export default function Header() {
             <Spacer /> */}
           <Center>
             <Link to="/">
-              <img src="email.png" alt="email logo" style={mail_style} />
+              <img
+                src={process.env.PUBLIC_URL + "/email.png"}
+                alt="email logo"
+                style={mail_style}
+              />
             </Link>
           </Center>
           {/* </Flex> */}

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Project from "./Project";
 import Experience from "./Experience";
 import Bio from "./Bio";
@@ -11,20 +11,21 @@ import { Container, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
   const backcolor = useColorModeValue("gray.50", "blue.800");
+  const root = "";
   return (
     <>
       <Header />
       <Container bg={backcolor} maxW="100%" mx="auto">
         <hr />
-        <Container maxW="62em" mx="auto" border="1px">
+        <Container maxW="62em" mx="auto">
           <Bio />
           <hr />
           <Options />
           <div id="posts">
             <Switch>
-              <Route path="/" exact component={Project} />
-              <Route path="/experience" exact component={Experience} />
-              <Route path="/other" exact component={Other} />
+              <Route path={`${root}/`} exact component={Project} />
+              <Route path={`${root}/experience`} exact component={Experience} />
+              <Route path={`${root}/others`} exact component={Other} />
             </Switch>
           </div>
         </Container>

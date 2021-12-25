@@ -27,7 +27,8 @@ export default function Post({ content, action }) {
         <PostSummary
           hovering={hovering}
           title={content.title}
-          date={content.date}
+          startDate={content.startDate}
+          endDate={content.endDate}
           img={content.img}
         />
       </Button>
