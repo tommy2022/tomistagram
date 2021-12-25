@@ -11,7 +11,7 @@ import { Container, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
   const backcolor = useColorModeValue("gray.50", "blue.800");
-  const root = "";
+  const root = process.env.PUBLIC_URL;
   return (
     <>
       <Header />
