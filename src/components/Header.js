@@ -57,7 +57,7 @@ export default function Header() {
         <Spacer />
         <Box w="100%">
           <Center>
-            <Heading>Search Bar</Heading>
+            <Heading fontSize={["xl", "2xl", "3xl"]}>Search Bar</Heading>
           </Center>
         </Box>
         <Spacer />
