@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { SimpleGrid, Modal, useDisclosure } from "@chakra-ui/react";
 import Post from "./Post";
 import PostDetail from "./PostDetail";
@@ -27,15 +27,19 @@ export default function Gallery({ contents }) {
   //   setLoaded(true);
   // }, []);
 
-
-
   const clickPost = (content) => {
     setCurrentPost(content);
     onOpen();
   };
   return (
     <>
-      <Modal onClose={onClose} size={"5xl"} isOpen={isOpen} scrollBehavior="inside" isCentered>
+      <Modal
+        onClose={onClose}
+        size={"5xl"}
+        isOpen={isOpen}
+        scrollBehavior="inside"
+        isCentered
+      >
         <PostDetail content={currentPost} />
       </Modal>
       <SimpleGrid columns={[2, null, 3]} spacing="5%">

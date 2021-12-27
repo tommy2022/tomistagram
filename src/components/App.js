@@ -1,34 +1,30 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./Header/Header";
 import { Route, Switch } from "react-router-dom";
+import MainRoute from "./MainRoute";
 import Project from "./Project";
 import Experience from "./Experience";
-import Bio from "./Bio";
 import Other from "./Other";
-import Options from "./Options";
+import Courses from "./Courses";
+import Tags from "./Tags";
 
 import { Container, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
-  const backcolor = useColorModeValue("gray.50", "blue.800");
+  const backcolor = useColorModeValue("gray.50", "rgb(26, 32, 44)");
   const root = process.env.PUBLIC_URL;
   return (
     <>
       <Header />
-      <Container bg={backcolor} maxW="100%" mx="auto">
+      <Container bg={backcolor} maxW="100%" mx="auto" p={0}>
         <hr />
-        <Container maxW="62em" mx="auto">
-          <Bio />
-          <hr />
-          <Options />
-          <div id="posts">
-            <Switch>
-              <Route path={`${root}/`} exact component={Project} />
-              <Route path={`${root}/experience`} exact component={Experience} />
-              <Route path={`${root}/others`} exact component={Other} />
-            </Switch>
-          </div>
-        </Container>
+        <Switch>
+          <MainRoute path={`${root}/`} exact component={Project} />
+          <MainRoute path={`${root}/experience`} exact component={Experience} />
+          <MainRoute path={`${root}/courses`} exact component={Courses} />
+          <MainRoute path={`${root}/other`} exact component={Other} />
+          <Route path={`${root}/tags/:tagname`} component={Tags} />
+        </Switch>
       </Container>
     </>
   );

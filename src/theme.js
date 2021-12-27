@@ -1,11 +1,8 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const config = {
-  initialColorMode: "light",
+  initialColorMode: "dark",
   useSystemColorMode: true,
-  // gray: {
-  //   50: "#F5F5F5",
-  // },
 };
 
 // #FFFAFA

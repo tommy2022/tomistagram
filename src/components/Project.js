@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "./Gallery";
+import Gallery from "./Posts/Gallery";
 import { compareDates, PRESENT } from "../utility";
 
 const projects = [
@@ -9,13 +9,15 @@ const projects = [
     img: "/pfp.jpg",
     startDate: "01-2020",
     endDate: "",
+    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
   },
   {
-    title: "Sudoku Website may",
+    title: "Piazza Post Classifier",
     description: "its a sudoku website",
     img: "/pfp.jpg",
     startDate: "02-2021",
     endDate: "",
+    tags: ["C++", "Machine Learning"],
   },
   {
     title: "Sudoku Website feb",
@@ -23,6 +25,13 @@ const projects = [
     img: "/pfp.jpg",
     startDate: "03-2021",
     endDate: PRESENT,
+    tags: [
+      "Javascript",
+      "HTML/CSS",
+      "Backtracking",
+      "LOL",
+      "Really_really_long_tag_that_requires_a_new_line",
+    ],
   },
   {
     title: "Sudoku Website feb",
@@ -30,6 +39,7 @@ const projects = [
     img: "/pfp.jpg",
     startDate: "05-2021",
     endDate: "",
+    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
   },
   {
     title: "Sudoku Website",
@@ -37,6 +47,7 @@ const projects = [
     img: "/notfound.jpeg",
     startDate: "01-2021",
     endDate: "06-2021",
+    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
   },
 ];
 

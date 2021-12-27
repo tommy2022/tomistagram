@@ -1,0 +1,11 @@
+@media (orientation: landscape) {
+    #vstack {
+        display: none;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #hstack {
+        display: none;
+    }
+  }

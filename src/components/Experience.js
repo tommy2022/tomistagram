@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Gallery from "./Gallery";
+import React from "react";
+import Gallery from "./Posts/Gallery";
 import { compareDates, PRESENT } from "../utility";
 
 const projects = [
