@@ -8,20 +8,24 @@ import {
   ModalCloseButton,
   ModalContent,
   ModalBody,
-  Image,
   VStack,
   Text,
   Heading,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { IconContext } from "react-icons";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { onGoing, PRESENT } from "../../utility";
 import HashTag from "./HashTag";
+import PostImage from "./PostImage";
 
 export default function PostDetail({ content }) {
-  const { title, description, img, startDate, endDate, tags } = content;
+  const { title, description, imgs, startDate, endDate, tags } = content;
   const [liked, setLiked] = useState(content.liked);
+
+  const color = useColorModeValue("black", "white");
+  const backcolor = useColorModeValue("gray.50", "rgb(26, 32, 44)");
 
   const toggleLiked = () => {
     setLiked(!liked);
@@ -46,13 +50,9 @@ export default function PostDetail({ content }) {
         <Box h="100%" bg="black">
           <Flex h="100%" w="100%">
             <Center flex="1" maxH="100%">
-              <Image
-                src={img}
-                w="100%"
-                onDoubleClick={() => doubleClickLike()}
-              />
+              <PostImage imgs={imgs} onDoubleClick={() => doubleClickLike()} />
             </Center>
-            <Box h="100%" maxW="500px" width="45%" bg="white">
+            <Box h="100%" maxW="500px" width="45%" bg={backcolor}>
               <ModalCloseButton />
               <VStack h="100%">
                 <Box h="49px" width="100%">
@@ -88,7 +88,7 @@ export default function PostDetail({ content }) {
                     <Box m={0} w="100%" justifyContent="flex-start">
                       <IconContext.Provider
                         value={{
-                          color: liked ? `rgb(${heart_color})` : "black",
+                          color: liked ? `rgb(${heart_color})` : color,
                           className: "global-class-name",
                           size: "22px",
                         }}

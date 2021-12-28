@@ -29,7 +29,7 @@ export default function Post({ content, action }) {
           title={content.title}
           startDate={content.startDate}
           endDate={content.endDate}
-          img={content.img}
+          img={content.imgs[0]}
         />
       </Button>
     </AspectRatio>

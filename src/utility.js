@@ -1,3 +1,14 @@
+export const PRESENT = "Present";
+
+export function initializePostObj(obj, folder) {
+  obj.forEach((post) => {
+    post.liked = false;
+    post.imgs.forEach(
+      (url, i, self) => (self[i] = process.env.PUBLIC_URL + folder + url)
+    );
+  });
+}
+
 export function compareDates(a, b) {
   let moment = require("moment");
   let a_date = a.endDate === "" ? a.startDate : a.endDate;
@@ -24,5 +35,3 @@ export function onGoing() {
   let moment = require("moment");
   return moment().format("MM-YYYY");
 }
-
-export const PRESENT = "Present";

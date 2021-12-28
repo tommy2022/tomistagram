@@ -60,7 +60,7 @@ export default function Bio() {
               </Text>
             </SimpleGrid>
             <Text>
-              I am a third-year student in Computer Science at the Unviersity of
+              I am a third-year student in Computer Science at the University of
               Michigan. Outside of work and academics, you'll likely not find me
               not doing any of Swimming, working on Jigsaw Puzzles, Cooking, and
               playing Super Smash Bros. Or, if we apply De Morgan's, you will

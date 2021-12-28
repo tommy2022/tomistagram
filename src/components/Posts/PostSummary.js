@@ -11,7 +11,7 @@ export default function PostSummary({
   img,
 }) {
   if (!hovering) {
-    return <Image m={0} src={img} alt={`Image for post ${title}`} />;
+    return <Image m={0} src={img} alt={`Image for post ${title}`} w="100%" maxH="100%"/>;
   }
   return (
     <VStack>
