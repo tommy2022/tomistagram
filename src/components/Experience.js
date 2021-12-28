@@ -1,52 +1,56 @@
 import React from "react";
 import Gallery from "./Posts/Gallery";
-import { compareDates, PRESENT } from "../utility";
+import { compareDates, PRESENT, initializePostObj } from "../utility";
 
-const projects = [
+const experience = [
   {
-    title: "Sudoku Website",
-    description: "its a sudoku website",
-    imgs: "/instagram.jpg",
-    startDate: "01-2020",
+    title: "University of Michigan",
+    subtitle: "EECS 203 (Discrete Math) Teaching Assistant",
+    description: "aa",
+    imgs: ["m.png"],
+    startDate: "07-2020",
     endDate: PRESENT,
+    tags: ["TA", "Discrete Math", "Logic"],
   },
   {
-    title: "Sudoku Website",
-    description: "its a sudoku website",
-    imgs: "/email.png",
-    startDate: "01-2021",
-    endDate: "",
-  },
-  {
-    title: "Sudoku Website",
-    description: "its a sudoku website",
-    imgs: "/pfp.jpg",
+    title: "University of Michigan",
+    subtitle: "Research Assistant",
+    description: "its a game website",
+    imgs: ["m.png"],
     startDate: "12-2021",
     endDate: PRESENT,
+    tags: ["Research", "Python", "Topic Modelling"],
   },
   {
-    title: "Sudoku Website",
+    title: "PID Inc.",
+    subtitle: "pid.jpeg",
     description: "its a sudoku website",
-    imgs: "/pfp.jpg",
-    startDate: "09-2021",
-    endDate: "",
+    imgs: ["pid.jpeg"],
+    startDate: "09-2020",
+    endDate: "08-2021",
+    tags: [
+      "Python",
+      "Opencv",
+      "Computer Vision",
+      "Machine Learning",
+      "Swimming?"
+    ],
   },
   {
-    title: "Sudoku Website",
+    title: "Cookpad",
+    subtitle: "cookpad.webp",
     description: "its a sudoku website",
-    imgs: "/notfound.jpeg",
-    startDate: "01-2021",
-    endDate: "06-2021",
+    imgs: ["cookpad.jpeg"],
+    startDate: "08-2021",
+    endDate: "08-2021",
+    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
   },
 ];
 
-projects.sort((a, b) => (compareDates(a, b) ? 1 : -1));
+experience.sort((a, b) => (compareDates(a, b) ? 1 : -1));
 
-projects.forEach((post) => {
-  post.liked = false;
-  post.img = process.env.PUBLIC_URL + post.img;
-});
+initializePostObj(experience, "/ExperienceImg/");
 
-export default function Experience() {
-  return <Gallery contents={projects} />;
+export default function Project() {
+  return <Gallery contents={experience} />;
 }

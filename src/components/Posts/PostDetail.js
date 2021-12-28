@@ -21,7 +21,7 @@ import HashTag from "./HashTag";
 import PostImage from "./PostImage";
 
 export default function PostDetail({ content }) {
-  const { title, description, imgs, startDate, endDate, tags } = content;
+  const { title, subtitle, description, imgs, startDate, endDate, tags } = content;
   const [liked, setLiked] = useState(content.liked);
 
   const color = useColorModeValue("black", "white");
@@ -49,21 +49,30 @@ export default function PostDetail({ content }) {
       <ModalContent m={15} height="80vh">
         <Box h="100%" bg="black">
           <Flex h="100%" w="100%">
-            <Center flex="1" maxH="100%">
+            <Center flex="1" maxH="100%" maxW="100%" w="100%">
               <PostImage imgs={imgs} onDoubleClick={() => doubleClickLike()} />
             </Center>
             <Box h="100%" maxW="500px" width="45%" bg={backcolor}>
               <ModalCloseButton />
               <VStack h="100%">
-                <Box h="49px" width="100%">
+                <Box width="100%">
                   <Heading
                     as="h4"
                     size="md"
                     justifyContent="flex-start"
-                    my={3}
-                    mx={6}
+                    mt={3}
+                    mx={4}
                   >
                     {title}
+                  </Heading>
+                  <Heading
+                    as="h4"
+                    size="sm"
+                    justifyContent="flex-start"
+                    mb={1}
+                    mx={6}
+                  >
+                    {subtitle}
                   </Heading>
                   <hr />
                 </Box>

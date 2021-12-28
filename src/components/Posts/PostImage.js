@@ -1,14 +1,14 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import "./ImageArrow.css";
-
+import { Box } from "@chakra-ui/react";
 
 export default function PostImage({imgs, onDoubleClick}) {
     const imagesObj = imgs.map((img) => {
         return {
-            original: img
+            original: img,
         }
     })
+    console.log(imagesObj);
     const settings = {
         showBullets: true,
         onErrorImageURL: process.env.PUBLIC_URL + "/notfound.jpeg",
@@ -17,6 +17,8 @@ export default function PostImage({imgs, onDoubleClick}) {
     }
     console.log(imagesObj)
     return (
-        <ImageGallery items={imagesObj} {...settings}/>
+        <Box id="gallery wrappere" w="100%">
+            <ImageGallery items={imagesObj} {...settings}/>
+        </Box>
     )
 }

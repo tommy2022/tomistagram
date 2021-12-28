@@ -53,9 +53,7 @@ const projects = [
 
 projects.sort((a, b) => (compareDates(a, b) ? 1 : -1));
 
-console.log(projects);
 initializePostObj(projects, "/ProjectImg/");
-console.log(projects);
 
 export default function Project() {
   return <Gallery contents={projects} />;
