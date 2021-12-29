@@ -75,6 +75,10 @@ export default function Bio() {
               my short bio so I'll make a post under "others") And yes, this
               website is styled using Chakra :)
             </Text>
+            <Text>
+            TODO 1: Fill in description for posts <br />
+            There's 3 more TODOs left for this page. Can you find all three of them?
+            </Text>
           </VStack>
         </BioWrapper>
       </Flex>
