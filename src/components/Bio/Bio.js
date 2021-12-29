@@ -10,6 +10,7 @@ import {
   Flex,
   SimpleGrid,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import BioWrapper from "./BioWrapper";
 
 export default function Bio() {
@@ -35,9 +36,11 @@ export default function Bio() {
                 Xiangyu (Tom) Qin
               </Text>
               <Center>
+              <Link to={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank">
                 <Button borderRadius="sm" bg="blue.500" color="white" size="xs">
                   Resume
                 </Button>
+                </Link>
               </Center>
             </HStack>
             <SimpleGrid
