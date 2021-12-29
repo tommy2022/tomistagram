@@ -43,7 +43,7 @@ const experience = [
     imgs: ["cookpad.jpeg"],
     startDate: "08-2021",
     endDate: "08-2021",
-    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
+    tags: ["Javascript", "HTML/CSS", "Next.js", "Ruby", "Rails"],
   },
 ];
 

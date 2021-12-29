@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Table Recognizer",
-    description: "its a sudoku website",
+    description: "its a table recognizer",
     imgs: ["sudoku.png"],
     startDate: "03-2021",
     endDate: PRESENT,
@@ -35,19 +35,19 @@ const projects = [
   },
   {
     title: "Piazza Post Classifier",
-    description: "its a sudoku website",
+    description: "its a sudoku website <- lol its not  ",
     imgs: ["piazza.jpeg"],
     startDate: "03-2020",
     endDate: "",
     tags: ["C++", "Machine Learning"],
   },
   {
-    title: "Sudoku Website",
-    description: "its a sudoku website",
-    imgs: ["notfound.jpeg"],
-    startDate: "01-2021",
-    endDate: "06-2021",
-    tags: ["Javascript", "HTML/CSS", "Backtracking", "LOL"],
+    title: "Dog Breed Classification",
+    description: "Classify dog breeds. Transfer learning..... 74% accuracy and 0.863 AUROC todo",
+    imgs: ["dogs.png"],
+    startDate: "04-2021",
+    endDate: "",
+    tags: ["CNN", "Machine Learning", "Transfer Learning", ""],
   },
 ];
 
