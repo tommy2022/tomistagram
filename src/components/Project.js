@@ -24,7 +24,7 @@ const projects = [
     description: "its a table recognizer",
     imgs: ["tablegrid.png", "tablecell.png"],
     startDate: "03-2021",
-    endDate: PRESENT,
+    endDate: "",
     tags: [
       "Python",
       "Opencv",

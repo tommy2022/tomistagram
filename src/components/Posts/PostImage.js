@@ -17,7 +17,7 @@ export default function PostImage({imgs, onDoubleClick}) {
     }
     console.log(imagesObj)
     return (
-        <Box id="gallery wrappere" w="100%">
+        <Box id="gallery wrappere" w="100%" onDoubleClick={onDoubleClick}>
             <ImageGallery items={imagesObj} {...settings}/>
         </Box>
     )
