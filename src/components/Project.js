@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Table Recognizer",
     description: "its a table recognizer",
-    imgs: ["sudoku.png"],
+    imgs: ["tablegrid.png", "tablecell.png"],
     startDate: "03-2021",
     endDate: PRESENT,
     tags: [

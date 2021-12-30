@@ -5,8 +5,6 @@ import { useLocation } from 'react-router-dom'
 
 export default function Option({to, text}) {
     const location = useLocation();
-
-    to = process.env.PUBLIC_URL + to;
     
     const currentPage = location.pathname === to;
 

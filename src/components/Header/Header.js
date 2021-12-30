@@ -17,20 +17,18 @@ import DarkModeButton from "./DarkModeButton";
 export default function Header() {
   const title = {
     fontFamily: "Brush Script MT, Comic Sans",
-    fontSize: "30px",
   };
 
   const maincolor = useColorModeValue("white", "rgb(23, 29, 42)");
 
-  const root = process.env.PUBLIC_URL;
 
   return (
     <Container bg={maincolor} w="100%" maxW="100%">
       <Container maxW="62em" mx="auto" p={1}>
         <Flex>
           <Box p="2" w="100%">
-            <Link to={root + "/"} style={{ textDecoration: "none" }}>
-              <Heading size="md" style={title}>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Heading fontSize={["lg", "xl", "2xl", "3xl"]} style={title}>
                 Tomistagram
               </Heading>
             </Link>

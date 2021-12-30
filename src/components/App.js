@@ -12,18 +12,17 @@ import { Container, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
   const backcolor = useColorModeValue("gray.50", "rgb(26, 32, 44)");
-  const root = process.env.PUBLIC_URL;
   return (
     <>
       <Header />
       <Container bg={backcolor} maxW="100%" mx="auto" p={0}>
         <hr />
         <Switch>
-          <MainRoute path={`${root}/`} exact component={Experience} />
-          <MainRoute path={`${root}/project`} exact component={Project} />
+          <MainRoute path={"/"} exact component={Experience} />
+          <MainRoute path={"/project"} exact component={Project} />
           {/* <MainRoute path={`${root}/courses`} exact component={Courses} /> */}
-          <MainRoute path={`${root}/other`} exact component={Other} />
-          <Route path={`${root}/tags/:tagname`} component={Tags} />
+          <MainRoute path={"/other"} exact component={Other} />
+          <Route path={"/tags/:tagname"} component={Tags} />
         </Switch>
       </Container>
     </>

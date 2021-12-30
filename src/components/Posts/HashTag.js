@@ -8,7 +8,7 @@ export default function HashTag({ text }) {
 
   const color = useColorModeValue("rgb(0, 55, 107)", "rgb(118, 176, 231)");
   return (
-    <Link to={`${root}/tags/${text}`}>
+    <Link to={`/tags/${text}`}>
       <Text
         mx={1}
         fontSize="sm"
