@@ -16,12 +16,13 @@ import {
 import { IconContext } from "react-icons";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
-import { onGoing, PRESENT } from "../../utility";
+import { onGoing, PRESENT } from "../../Utility";
 import HashTag from "./HashTag";
 import PostImage from "./PostImage";
 
 export default function PostDetail({ content }) {
-  const { title, subtitle, description, imgs, startDate, endDate, tags } = content;
+  const { title, subtitle, description, imgs, startDate, endDate, tags } =
+    content;
   const [liked, setLiked] = useState(content.liked);
 
   const color = useColorModeValue("black", "white");
@@ -70,7 +71,7 @@ export default function PostDetail({ content }) {
                     size="sm"
                     justifyContent="flex-start"
                     mb={1}
-                    mx={6}
+                    mx={4}
                   >
                     {subtitle}
                   </Heading>

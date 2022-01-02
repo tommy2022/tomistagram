@@ -1,8 +1,8 @@
 import React from "react";
 import Gallery from "./Posts/Gallery";
-import { compareDates, PRESENT, initializePostObj } from "../utility";
+import { compareDates, PRESENT, initializePostObj } from "../Utility";
 
-const experience = [
+export const experiences = [
   {
     title: "University of Michigan",
     subtitle: "EECS 203 (Discrete Math) Teaching Assistant",
@@ -10,7 +10,7 @@ const experience = [
     imgs: ["m.png"],
     startDate: "07-2020",
     endDate: PRESENT,
-    tags: ["TA", "Discrete Math", "Logic"],
+    tags: ["Teaching Assistant", "Discrete Math", "Logic", "Counting"],
   },
   {
     title: "University of Michigan",
@@ -33,7 +33,7 @@ const experience = [
       "Opencv",
       "Computer Vision",
       "Machine Learning",
-      "Swimming?"
+      "Swimming?",
     ],
   },
   {
@@ -47,10 +47,10 @@ const experience = [
   },
 ];
 
-experience.sort((a, b) => (compareDates(a, b) ? 1 : -1));
+experiences.sort((a, b) => (compareDates(a, b) ? 1 : -1));
 
-initializePostObj(experience, "/ExperienceImg/");
+initializePostObj(experiences, "/ExperienceImg/");
 
 export default function Project() {
-  return <Gallery contents={experience} />;
+  return <Gallery contents={experiences} />;
 }

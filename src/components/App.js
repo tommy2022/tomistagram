@@ -17,13 +17,15 @@ function App() {
       <Header />
       <Container bg={backcolor} maxW="100%" mx="auto" p={0}>
         <hr />
-        <Switch>
-          <MainRoute path={"/"} exact component={Experience} />
-          <MainRoute path={"/project"} exact component={Project} />
-          {/* <MainRoute path={`${root}/courses`} exact component={Courses} /> */}
-          <MainRoute path={"/other"} exact component={Other} />
-          <Route path={"/tags/:tagname"} component={Tags} />
-        </Switch>
+        <Container maxW="62em" mx="auto">
+          <Switch>
+            <MainRoute path={"/"} exact component={Experience} />
+            <MainRoute path={"/project"} exact component={Project} />
+            {/* <MainRoute path={`${root}/courses`} exact component={Courses} /> */}
+            <MainRoute path={"/other"} exact component={Other} />
+            <Route path={"/tags/:tagname"} component={Tags} />
+          </Switch>
+        </Container>
       </Container>
     </>
   );

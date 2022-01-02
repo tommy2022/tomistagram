@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import DarkModeButton from "./DarkModeButton";
+import { AiFillGithub, AiFillHome } from "react-icons/ai";
 
 export default function Header() {
   const title = {
@@ -20,7 +21,6 @@ export default function Header() {
   };
 
   const maincolor = useColorModeValue("white", "rgb(23, 29, 42)");
-
 
   return (
     <Container bg={maincolor} w="100%" maxW="100%">
@@ -34,7 +34,7 @@ export default function Header() {
             </Link>
           </Box>
           <Spacer />
-          <Box w="100%">
+          {/* <Box w="100%">
             <Center h="100%">
               <Heading
                 fontSize={["xl", "2xl", "3xl"]}
@@ -44,9 +44,23 @@ export default function Header() {
               </Heading>
             </Center>
           </Box>
-          <Spacer />
+          <Spacer /> */}
           <Box w="100%">
-            <HStack h="100%" justify="flex-end">
+            <HStack
+              h="100%"
+              justify="flex-end"
+              spacing={["8px", "10px", "12px"]}
+            >
+              <Tooltip label="Home">
+                <Link to="/">
+                  <AiFillHome size="25px" />
+                </Link>
+              </Tooltip>
+              <Tooltip label="Github">
+                <a href="https://github.com/tommy2022" target="_blank">
+                  <AiFillGithub size="25px" />
+                </a>
+              </Tooltip>
               <Tooltip label="qinx@umich.edu">
                 <a href="mailto:qinx@umich.edu">
                   <EmailIcon alt="email icon" w={10} h="25px" />

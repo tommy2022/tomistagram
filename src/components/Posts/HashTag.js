@@ -3,7 +3,6 @@ import { Text, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function HashTag({ text }) {
-  text = text.replace(" ", "_").toLowerCase();
   const root = process.env.PUBLIC_URL;
 
   const color = useColorModeValue("rgb(0, 55, 107)", "rgb(118, 176, 231)");

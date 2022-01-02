@@ -6,6 +6,9 @@ export function initializePostObj(obj, folder) {
     post.imgs.forEach(
       (url, i, self) => (self[i] = process.env.PUBLIC_URL + folder + url)
     );
+    post.tags.forEach(
+      (tag, i, self) => (self[i] = tag.replace(" ", "_").toLowerCase())
+    );
   });
 }
 
@@ -28,7 +31,11 @@ export function compareDates(a, b) {
   const a_moment_object = moment(a_date, "MM-YYYY");
   const b_moment_object = moment(b_date, "MM-YYYY");
 
-  return moment(a_moment_object).isBefore(b_moment_object, "month");
+  if (moment(a_moment_object).isSame(b_moment_object, "month")) {
+    return a.title < b.title;
+  } else if (moment(a_moment_object).isBefore(b_moment_object, "month")) {
+    return true;
+  }
 }
 
 export function onGoing() {

@@ -1,8 +1,8 @@
 import React from "react";
 import Gallery from "./Posts/Gallery";
-import { compareDates, PRESENT, initializePostObj } from "../utility";
+import { compareDates, PRESENT, initializePostObj } from "../Utility";
 
-const projects = [
+export const projects = [
   {
     title: "Sudoku Website",
     description: "its a sudoku website",
@@ -30,7 +30,7 @@ const projects = [
       "Opencv",
       "Computer Vision",
       "Machine Learning",
-      "Swimming?"
+      "Swimming?",
     ],
   },
   {
@@ -43,7 +43,8 @@ const projects = [
   },
   {
     title: "Dog Breed Classification",
-    description: "Classify dog breeds. Transfer learning..... 74% accuracy and 0.863 AUROC todo",
+    description:
+      "Classify dog breeds. Transfer learning..... 74% accuracy and 0.863 AUROC todo",
     imgs: ["dogs.png"],
     startDate: "04-2021",
     endDate: "",

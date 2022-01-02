@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import { Image, VStack, Text } from "@chakra-ui/react";
-import { PRESENT } from "../../utility";
+import { PRESENT } from "../../Utility";
 
 export default function PostSummary({
   hovering,
@@ -11,7 +11,15 @@ export default function PostSummary({
   img,
 }) {
   if (!hovering) {
-    return <Image m={0} src={img} alt={`Image for post ${title}`} w="100%" maxH="100%"/>;
+    return (
+      <Image
+        m={0}
+        src={img}
+        alt={`Image for post ${title}`}
+        w="100%"
+        maxH="100%"
+      />
+    );
   }
   return (
     <VStack>
