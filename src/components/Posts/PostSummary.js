@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import { Image, VStack, Text } from "@chakra-ui/react";
-import { PRESENT } from "../../Utility";
+import { PRESENT } from "../../Constants";
 
 export default function PostSummary({
   hovering,

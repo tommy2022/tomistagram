@@ -16,7 +16,8 @@ import {
 import { IconContext } from "react-icons";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
-import { onGoing, PRESENT } from "../../Utility";
+import { onGoing } from "../../Utility";
+import { PRESENT } from "../../Constants";
 import HashTag from "./HashTag";
 import PostImage from "./PostImage";
 
@@ -77,15 +78,12 @@ export default function PostDetail({ content }) {
                   </Heading>
                   <hr />
                 </Box>
-                <ModalBody w="100%" textAlign={"left"}>
-                  {description} word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word word word word
-                  word more word word word word word more word
+                <ModalBody
+                  w="100%"
+                  textAlign={"left"}
+                  style={{ whiteSpace: "pre-wrap" }}
+                >
+                  {description}
                 </ModalBody>
                 <Box px={2} w="100%" justifyContent="flex-start">
                   {tags.map((tag, i) => (

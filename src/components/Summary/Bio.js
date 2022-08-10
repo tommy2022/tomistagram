@@ -21,7 +21,7 @@ export default function Bio() {
   const bday = moment("2001-12-30", "YYYY-MM-DD");
   const today = moment().startOf("day");
 
-  const daysOld = moment.duration(today.diff(bday)).asDays();
+  const daysOld = Math.round(moment.duration(today.diff(bday)).asDays());
   const numPosts = projects.length + experiences.length + others.length;
   return (
     <Summary img={process.env.PUBLIC_URL + "/pfp.jpg"}>

@@ -1,5 +1,4 @@
-export const PRESENT = "Present";
-
+import { PRESENT } from "./Constants";
 export function initializePostObj(obj, folder) {
   obj.forEach((post) => {
     post.liked = false;
@@ -13,6 +12,11 @@ export function initializePostObj(obj, folder) {
 }
 
 export function compareDates(a, b) {
+  const a_priority = "priority" in a ? a.priority : 0;
+  const b_priority = "priority" in b ? b.priority : 0;
+  if (a_priority !== b_priority) {
+    return a_priority < b_priority;
+  }
   let moment = require("moment");
   let a_date = a.endDate === "" ? a.startDate : a.endDate;
   let b_date = b.endDate === "" ? b.startDate : b.endDate;

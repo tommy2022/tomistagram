@@ -1,6 +1,26 @@
 import React from "react";
 import Gallery from "./Posts/Gallery";
-import { compareDates, PRESENT, initializePostObj } from "../Utility";
+import { compareDates, initializePostObj } from "../Utility";
+import {
+  PRESENT,
+  RESEARCH,
+  PYTHON,
+  JS,
+  REACT,
+  PHP,
+  HTML,
+  NEXT,
+  RUBY,
+  RUBY_ON_RAILS,
+  ANGULARJS,
+  JAVA,
+  ORACLE,
+  COSMOS,
+  ML,
+  CV,
+  OPENCV,
+  CPP,
+} from "../Constants";
 
 export const projects = [
   {
@@ -9,7 +29,7 @@ export const projects = [
     imgs: ["sudoku.png"],
     startDate: "07-2020",
     endDate: "",
-    tags: ["Javascript", "HTML/CSS", "Backtracking", "Bit Manupulation"],
+    tags: [JS, HTML, "Backtracking", "Bit Manupulation"],
   },
   {
     title: "Game Website",
@@ -17,7 +37,7 @@ export const projects = [
     imgs: ["spaceinvader.png", "flappyabe.png", "tetris.png"],
     startDate: "08-2020",
     endDate: "",
-    tags: ["Javascript", "html/css", "php"],
+    tags: [JS, HTML, PHP],
   },
   {
     title: "Table Recognizer",
@@ -25,13 +45,7 @@ export const projects = [
     imgs: ["tablegrid.png", "tablecell.png"],
     startDate: "03-2021",
     endDate: "",
-    tags: [
-      "Python",
-      "Opencv",
-      "Computer Vision",
-      "Machine Learning",
-      "Swimming?",
-    ],
+    tags: [PYTHON, OPENCV, CV, ML, "Swimming"],
   },
   {
     title: "Piazza Post Classifier",
@@ -39,7 +53,7 @@ export const projects = [
     imgs: ["piazza.jpeg"],
     startDate: "03-2020",
     endDate: "",
-    tags: ["C++", "Machine Learning"],
+    tags: [CPP, ML],
   },
   {
     title: "Dog Breed Classification",
@@ -48,7 +62,7 @@ export const projects = [
     imgs: ["dogs.png"],
     startDate: "04-2021",
     endDate: "",
-    tags: ["CNN", "Machine Learning", "Transfer Learning", ""],
+    tags: ["CNN", ML, "Transfer Learning"],
   },
 ];
 
