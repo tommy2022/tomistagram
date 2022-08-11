@@ -10,7 +10,7 @@ export default function Tabs() {
           <Option to="/" text="Experience" />
           <Option to="/project" text="Project" />
           {/* <Option to="/courses" text="Courses" /> */}
-          <Option to="/other" text="Other" />
+          {/* <Option to="/other" text="Other" /> */}
         </HStack>
       </Center>
     </Container>

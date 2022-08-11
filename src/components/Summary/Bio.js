@@ -56,32 +56,15 @@ export default function Bio() {
             </Text>{" "}
             days old
           </Text>
-          <Text as="span">
-            <Text as="span" style={{ fontWeight: "bold" }}>
-              57
-            </Text>{" "}
-            animes watched
-          </Text>
         </SimpleGrid>
         <Text>
-          I am a third-year student in Computer Science at the University of
-          Michigan. Outside of work and academics, you'll likely not find me not
-          doing any of Swimming, working on Jigsaw Puzzles, Cooking, and playing
-          Super Smash Bros. Or, if we apply De Morgan's, you will probably find
-          me Swimming &or; Jigsaw Puzzle &or; Cooking &or; Super Smash Bros.
+          Hi there! I'm Tom, a first year masters student in Computer Science at
+          the University of Michigan.
         </Text>
         <Text>
-          My current favorite tech stack is Chakra UI. I mean, how freakin cool
-          is it to be able to
-          <Text as="i"> import Chakra. </Text>
-          (and of course its features as well, but that will be too long for my
-          short bio so I'll make a post under "others") And yes, this website is
-          styled using Chakra : &#41;
-        </Text>
-        <Text>
-          TODO 1: Fill in description for posts <br />
-          There's 1 more TODO (feature wise) left for this page. Can you find
-          it?
+          Outside of work and academics, you'll likely find me Swimming, Working
+          on a Jigsaw Puzzle, Cooking, or Travelling. I've been to 19 countries
+          and my favourite part about travelling has always been the food.
         </Text>
       </VStack>
     </Summary>

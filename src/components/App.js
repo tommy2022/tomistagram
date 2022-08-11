@@ -22,7 +22,7 @@ function App() {
             <MainRoute path={"/"} exact component={Experience} />
             <MainRoute path={"/project"} exact component={Project} />
             {/* <MainRoute path={`${root}/courses`} exact component={Courses} /> */}
-            <MainRoute path={"/other"} exact component={Other} />
+            {/* <MainRoute path={"/other"} exact component={Other} /> */}
             <Route path={"/tags/:tagname"} component={Tags} />
           </Switch>
         </Container>
