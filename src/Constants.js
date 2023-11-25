@@ -35,3 +35,5 @@ export const OPENCV = "Opencv";
 export const CPP = "C++";
 
 export const AGILE = "Agile";
+
+export const BITBUCKET = "Bitbucket"

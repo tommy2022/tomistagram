@@ -2,20 +2,10 @@ import React from "react";
 import Gallery from "./Posts/Gallery";
 import { compareDates, initializePostObj } from "../Utility";
 import {
-  PRESENT,
-  RESEARCH,
   PYTHON,
   JS,
-  REACT,
   PHP,
   HTML,
-  NEXT,
-  RUBY,
-  RUBY_ON_RAILS,
-  ANGULARJS,
-  JAVA,
-  ORACLE,
-  COSMOS,
   ML,
   CV,
   OPENCV,
@@ -25,11 +15,17 @@ import {
 export const projects = [
   {
     title: "Sudoku Website",
-    description: "its a sudoku website",
+    description: "Its a sudoku website! Worked on this before I learned React so this is coded in Pure Javascript. Generates a new puzzle on the spot in 2ms so each time you start a new game, you'll have a brand new puzzle to work with! \n\nThinking of re-writing this in React since I want to add functionalities for adding notes (the small number options in each cell).",
     imgs: ["sudoku.png"],
     startDate: "07-2020",
     endDate: "",
     tags: [JS, HTML, "Backtracking", "Bit Manupulation"],
+    links: [
+      {
+        link: "https://tommy2022.github.io/SudokuWebsite/",
+        alias: "Visit website"
+      }
+    ]
   },
   {
     title: "Game Website",
@@ -49,7 +45,7 @@ export const projects = [
   },
   {
     title: "Piazza Post Classifier",
-    description: "its a sudoku website <- lol its not  ",
+    description: "Naive Bayes Classifier that classifies piazza posts into tags based on content of the post",
     imgs: ["piazza.jpeg"],
     startDate: "03-2020",
     endDate: "",

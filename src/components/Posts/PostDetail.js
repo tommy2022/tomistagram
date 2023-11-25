@@ -20,9 +20,10 @@ import { onGoing } from "../../Utility";
 import { PRESENT } from "../../Constants";
 import HashTag from "./HashTag";
 import PostImage from "./PostImage";
+import Links from "./Links";
 
 export default function PostDetail({ content }) {
-  const { title, subtitle, description, imgs, startDate, endDate, tags } =
+  const { title, subtitle, description, imgs, startDate, endDate, tags, links } =
     content;
   const [liked, setLiked] = useState(content.liked);
 
@@ -85,6 +86,9 @@ export default function PostDetail({ content }) {
                 >
                   {description}
                 </ModalBody>
+                <Box px={2} w="100%" justifyContent="flex-start">
+                  <Links links={links} />
+                </Box>
                 <Box px={2} w="100%" justifyContent="flex-start">
                   {tags.map((tag, i) => (
                     <HashTag text={tag} key={i} />

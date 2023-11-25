@@ -7,7 +7,6 @@ import { compareDates } from "../Utility";
 import Gallery from "./Posts/Gallery";
 import { Container } from "@chakra-ui/react";
 import TagSummary from "./Summary/TagSummary";
-import Tabs from "./Tabs/Tabs";
 
 export default function Tags() {
   const { tagname } = useParams();
@@ -23,11 +22,8 @@ export default function Tags() {
     });
     arr.sort((a, b) => (compareDates(a, b) ? 1 : -1));
     setPosts(arr);
-    console.log(arr);
     if (arr.length > 0) setImg(arr[0].imgs[0]);
-  }, []);
-
-  console.log(img);
+  }, [tagname]);
 
   if (posts == null) return null;
 

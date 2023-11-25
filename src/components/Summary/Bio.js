@@ -1,13 +1,10 @@
 import React from "react";
 import {
-  Image,
-  Container,
   Center,
   Button,
   HStack,
   VStack,
   Text,
-  Flex,
   SimpleGrid,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -58,8 +55,8 @@ export default function Bio() {
           </Text>
         </SimpleGrid>
         <Text>
-          Hi there! I'm Tom, a first year masters student in Computer Science at
-          the University of Michigan.
+          Hi there! I'm Tom, a second year masters student in Computer Science at
+          the University of Michigan graduating December 2023.
         </Text>
         <Text>
           Outside of work and academics, you'll likely find me Swimming, Working

@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from "./Posts/Gallery";
-import { compareDates, PRESENT, initializePostObj } from "../Utility";
+import { compareDates, initializePostObj } from "../Utility";
 
 export const others = [];
 

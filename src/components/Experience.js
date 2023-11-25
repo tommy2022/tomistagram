@@ -17,6 +17,7 @@ import {
   ORACLE,
   COSMOS,
   AGILE,
+  BITBUCKET,
 } from "../Constants";
 
 export const experiences = [
@@ -74,7 +75,7 @@ export const experiences = [
     title: "Nortonlifelock",
     subtitle: "Software Engineer Intern",
     description:
-      "\tI was placed on the Norton Communication Platform team where I worked on a platform agnostic communication messaging platform that is used to target end users for security news, product updates, product cross-sells, and more. I had the opportunity to particupate in their the agile iterative approach using Jira, utilizing Maven, Jenkins for unit and integration testing, along with Bitbucket and git for source management to deliver features quickly and with high quality.\n\tAs funny as it may sound, the most valuable skill I think I have acquired from this internship is probably reading code. Never thought this is something that need to be learned, but when there are hundreds of files in the code base, figuring out which file to look at, navigating through numerous number of files so that I can understand what a singular function does was not a skill I had going into this internship. \n\tOf course, the various languages and framework I was able to learn and interact with has also been a great experience for me. For the front-end, I provided new features to the GUI using Javascript + AngularJS to help our Customer Retention Management team intelligently configure messaging campaigns to select end-users for Nortonlifelock products. For the back-end, I implemented REST APIs through Java, interacting with the Oracle and Azure Cosmos Databases. Participated in Agile iterative approach using Jira while utilizing Maven, Jenkins for unit and integration testing, along with Bitbucket and git for source management to deliver features quickly and with high quality.",
+      "\tI was placed on the Norton Communication Platform team where I worked on a platform agnostic communication messaging platform that is used to target end users for security news, product updates, product cross-sells, and more. I had the opportunity to particupate in their the agile iterative approach using Jira, utilizing Maven, Jenkins for unit and integration testing, along with Bitbucket and git for source management to deliver features quickly and with high quality.\n\tThe most valuable skill I think I have acquired from this internship is probably reading code. Never thought this is something that need to be learned, but when there are hundreds of files in the code base, figuring out which file to look at, navigating through numerous number of files so that I can understand what a singular function does was not a skill I had going into this internship. \n\tOf course, the various languages and framework I was able to learn and interact with has also been a great experience for me. For the front-end, I provided new features to the GUI using Javascript + AngularJS to help our Customer Retention Management team intelligently configure messaging campaigns to select end-users for Nortonlifelock products. For the back-end, I implemented REST APIs through Java, interacting with the Oracle and Azure Cosmos Databases. Participated in Agile iterative approach using Jira while utilizing Maven, Jenkins for unit and integration testing, along with Bitbucket and git for source management to deliver features quickly and with high quality.",
     imgs: ["norton.png"],
     startDate: "05-2022",
     endDate: "08-2022",
@@ -86,9 +87,25 @@ export const experiences = [
       COSMOS,
       HTML,
       AGILE,
-      "Bitbucket",
+      BITBUCKET,
       "Maven",
       "Jenkins",
+    ],
+  },
+  {
+    title: "Optiver",
+    subtitle: "Software Engineer Intern",
+    description:
+      "\tEnhanced a core trading tool by integrating an automation for a daily parameter update in WPF saving over $100K in trading operations cost each year. \n\t Further, I worked on integrating a new C# server that automates trade booking by connecting to broker API through the FIX protocol and visualizes trader errors",
+    imgs: ["optiver.png"],
+    startDate: "06-2023",
+    endDate: "08-2023",
+    tags: [
+      "C#",
+      "WPF",
+      "Automation",
+      "Fix Protocol",
+      BITBUCKET,
     ],
   },
 ];

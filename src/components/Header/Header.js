@@ -4,7 +4,6 @@ import {
   Heading,
   Container,
   HStack,
-  Center,
   Flex,
   Spacer,
   Box,
@@ -57,7 +56,7 @@ export default function Header() {
                 </Link>
               </Tooltip>
               <Tooltip label="Github">
-                <a href="https://github.com/tommy2022" target="_blank">
+                <a href="https://github.com/tommy2022" target="_blank" rel="noreferrer">
                   <AiFillGithub size="25px" />
                 </a>
               </Tooltip>

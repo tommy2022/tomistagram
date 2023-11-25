@@ -1,16 +1,8 @@
 import React from "react";
 import {
-  Image,
-  Container,
-  Center,
-  Button,
-  HStack,
   VStack,
   Text,
-  Flex,
-  SimpleGrid,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import Summary from "./Summary";
 
 export default function TagSummary({ img, tagname, numPosts }) {

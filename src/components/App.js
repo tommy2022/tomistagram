@@ -4,8 +4,6 @@ import { Route, Switch } from "react-router-dom";
 import MainRoute from "./MainRoute";
 import Project from "./Project";
 import Experience from "./Experience";
-import Other from "./Other";
-import Courses from "./Courses";
 import Tags from "./Tags";
 
 import { Container, useColorModeValue } from "@chakra-ui/react";
