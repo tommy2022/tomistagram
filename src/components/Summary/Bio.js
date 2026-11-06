@@ -55,13 +55,16 @@ export default function Bio() {
           </Text>
         </SimpleGrid>
         <Text>
-          Hi there! I'm Tom, a second year masters student in Computer Science at
-          the University of Michigan graduating December 2023.
+          Hi there! I'm Tom, a Software Engineer and Integrations Lead at Revela
+          in Detroit, where I build payments, integrations, and AI-powered
+          workflow tools. I earned my B.S. and M.S. in Computer Science from the
+          University of Michigan.
         </Text>
         <Text>
-          Outside of work and academics, you'll likely find me Swimming, Working
-          on a Jigsaw Puzzle, Cooking, or Travelling. I've been to 19 countries
-          and my favourite part about travelling has always been the food.
+          Outside of work, you'll likely find me training for my next
+          triathlon, blundering pieces in chess or traveling. I've been to 19
+          countries
+          and my favorite part about traveling has always been the food.
         </Text>
       </VStack>
     </Summary>
