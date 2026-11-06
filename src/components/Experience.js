@@ -108,6 +108,28 @@ export const experiences = [
       BITBUCKET,
     ],
   },
+  {
+    title: "Revela",
+    subtitle: "Software Engineer II (Integrations Lead)",
+    description:
+      "\tAs Integrations Lead, I architected and built a reusable integration framework that standardizes auth, API configuration, and webhook safeguards (header validation, partner allowlisting, and idempotency checks), cutting standard integration time by 75% to one week. I co-led a two-month zero-downtime migration to a new payments provider that now processes $100M+ per quarter, growing referral fee revenue 4x over the legacy provider and cutting payment support tickets by 50%. I also reduced failed-payment incidents by 33% with automatic payment status checks and secured our payment provider's commitment to build server-side idempotency for payment creation." +
+      "\n\tBeyond payments, I delivered the end-to-end migration of document signing from an in-house system to a third-party platform in four weeks, saving Customer Support 50 hours per month and up to 200 during peak season, and hardened account security for all 2,000+ client users with mandatory TOTP two-factor authentication, backup codes, account recovery, login IP fingerprinting, and rate limiting. I've also streamlined product and engineering workflows with AI, including a ticket-routing pipeline that automatically assigns 70% of incoming HubSpot support tickets to the owning engineer and an error-triage tool that turns production errors into ready-to-merge pull requests." +
+      "\n\tI joined Revela as a Software Engineer I (Jan 2024 – Aug 2024), where I developed core backend services for the banking suite, supporting $10M+ in deposits through ACH transaction processing and ledger reconciliation, and redesigned legacy delinquency processing with scheduled materialized SQL views, cutting query latency from 10s to 10ms during peak morning traffic.",
+    imgs: ["revela.png"],
+    startDate: "01-2024",
+    endDate: PRESENT,
+    tags: [
+      RUBY,
+      RUBY_ON_RAILS,
+      REACT,
+      "PostgreSQL",
+      "Redis",
+      "Sidekiq",
+      "Payments",
+      "Integrations",
+      "AI",
+    ],
+  },
 ];
 
 experiences.sort((a, b) => (compareDates(a, b) ? 1 : -1));
