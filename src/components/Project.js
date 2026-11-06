@@ -60,6 +60,21 @@ export const projects = [
     endDate: "",
     tags: ["CNN", ML, "Transfer Learning"],
   },
+  {
+    title: "Rage Platformer (V1)",
+    description:
+      "A playable precision platformer built in Godot with GDScript, featuring hidden traps, interactive mechanisms, and timing-based challenges across progressively difficult levels. Fair warning: the death counter in the corner is there for a reason.",
+    imgs: ["rage1.png", "rage2.png", "rage3.png"],
+    startDate: "06-2026",
+    endDate: "",
+    tags: ["Godot", "GDScript", "Game Development"],
+    links: [
+      {
+        link: "https://tommy2022.github.io/Rage-Game-V1-Public",
+        alias: "Play demo",
+      },
+    ],
+  },
 ];
 
 projects.sort((a, b) => (compareDates(a, b) ? 1 : -1));
